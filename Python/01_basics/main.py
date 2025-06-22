@@ -1,1 +1,6 @@
-print("Hello, World!")
+print("Hello, Saad!")
+print("I am good!")
+print("How are you?")
+print("I am learning Python.")
+print("Python is a versatile language.")
+print("I am excited to learn more.")
