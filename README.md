@@ -1,24 +1,48 @@
 # Variables:
-- A variable is a name that refers to a value stored in memory. Think of it as a container for data.
-- We can create a variable using the assignment operator =.
+- In python, variables are used to store data that can be used and maipulated thorughout a program.
+- A variable is created the moment you assign a value to it using the assignment operator (=).
 - Example: 
 ```
-name = "Saad"
-age = 28
-is_learning = True
+age = 34 # integer
+name = "Saad" # string
+cgpa = 9.1 # float
 ```
 Here:
 
-	•	name is a variable storing a string.
 	•	age stores an integer.
-	•	is_learning stores a Boolean value.
+	•	name is a variable storing a string.
+	•	cgpa is storing a floating value
 
 - We don’t need to declare the type explicitly Python is dynamically typed.
 
-# DataTypes:
-- Python has several built in data types, grouped as follows: 
+Rules of Defining a variable in Python:
 
-## 1. Text Type:
-- str → String of characters
-- Example: "Hello"
+	•	Variable names must start with a letter (a-z, A-Z) or an underscore(_).
+	•	They can contain letters, numbers, and underscores.
+	•	Variable names are case-sensitive (age and Age are different).
+	•	Avoid using Python keywords (e.g., if, for, while) as variable names.
+
+# Datatypes:
+- Python supports several built-in datatypes:
+1. Numeric Types:
+   - int: Integer values (e.g., 5, -3, 0)
+   - float: Floating-point numbers (e.g., 3.14, -0.001)
+   - complex: Complex numbers (e.g., 2 + 3j)
+2. Sequence Types:
+   - list: Ordered, mutable collection of items (e.g., [1,2, 3])
+   - tuple: Ordered, immutable collection of items (e.g., (1,2))
+   - range: Represents a sequence of numbers (e.g., range(0, 10))
+3. Text Type:
+   - str: String of characters (e.g., "Hello, World!")
+4. Set Types:
+   - set: Unordered collection of unique items (e.g., {1, 2, 3})
+   - frozenset: Immutable version of a set (e.g., frozenset({1, 2, 3}))
+5. Mapping Type:
+   - dict: Collection of key-value pairs (e.g., {"name": "Alice", "age": 28})
+6. Boolean Type:
+   - bool: Represents True or False values.
+7. None Type:
+   - NoneType: Represents the absence of a value (e.g., None).
+   
+
 
