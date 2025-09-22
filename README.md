@@ -44,5 +44,31 @@ Rules of Defining a variable in Python:
 7. None Type:
    - NoneType: Represents the absence of a value (e.g., None).
    
+# TypeCasting:
+- Typecasting is the process of converting one datatype to another.
+- In Python, you can use built-in functions to perform typecasting:
+1. int(): Converts a value to an integer.
+2. float(): Converts a value to a floating-point number.
+3. str(): Converts a value to a string.
+4. list(): Converts a value to a list.
+5. tuple(): Converts a value to a tuple.
+6. set(): Converts a value to a set.
+7. dict(): Converts a value to a dictionary (if applicable).
+- Example:
 
+```
+# Convert String to an integer
+num_str = "10"
+num_int = int(num_str)
+print(num_int)  # Output: 10
 
+# Convert String to an integer
+num = 25
+num_str = str(num)
+print(num_str)  # Output: 25
+
+# Convert float to integer
+pi = 3.14
+pi_int = int(pi)
+print(pi_int)  # Output: 3
+```
