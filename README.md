@@ -75,3 +75,13 @@ pi_int = int(pi)
 print(pi_int)  # Output: 3
 print(type(pi_int))
 ```
+
+# Taking User Input 
+- In Python, you can take user input using the input() function.
+- By default, input() returns a string. We can convert it to other datatypes as needed.
+- Example:
+```
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+print(f"Hello {name}, you are {age} is years old! ")
+```
