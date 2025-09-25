@@ -1,4 +1,6 @@
-# Variables:
+# PYTHON
+
+## Variables:
 - In python, variables are used to store data that can be used and maipulated thorughout a program.
 - A variable is created the moment you assign a value to it using the assignment operator (=).
 - Example: 
@@ -22,7 +24,7 @@ Rules of Defining a variable in Python:
 	•	Variable names are case-sensitive (age and Age are different).
 	•	Avoid using Python keywords (e.g., if, for, while) as variable names.
 
-# Datatypes:
+## Datatypes:
 - Python supports several built-in datatypes:
 1. Numeric Types:
    - int: Integer values (e.g., 5, -3, 0)
@@ -44,7 +46,7 @@ Rules of Defining a variable in Python:
 7. None Type:
    - NoneType: Represents the absence of a value (e.g., None).
    
-# TypeCasting:
+## TypeCasting:
 - Typecasting is the process of converting one datatype to another.
 - In Python, you can use built-in functions to perform typecasting:
 1. int(): Converts a value to an integer.
@@ -76,7 +78,7 @@ print(pi_int)  # Output: 3
 print(type(pi_int))
 ```
 
-# Taking User Input 
+## Taking User Input 
 - In Python, you can take user input using the input() function.
 - By default, input() returns a string. We can convert it to other datatypes as needed.
 - Example:
@@ -86,7 +88,7 @@ age = int(input("Enter your age: "))
 print(f"Hello {name}, you are {age} is years old! ")
 ```
 
-# Comments, Escape Sequences and Print Statements
+## Comments, Escape Sequences and Print Statements
 - Comments are used to explain code and make it more readable. In Python, comments start with the # symbol.
 - Example:
 ```
