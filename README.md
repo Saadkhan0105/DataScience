@@ -85,3 +85,34 @@ name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 print(f"Hello {name}, you are {age} is years old! ")
 ```
+
+# Comments, Escape Sequences and Print Statements
+- Comments are used to explain code and make it more readable. In Python, comments start with the # symbol.
+- Example:
+```
+# This is a single-line comment
+print("Hello, World!")  # This prints a message to the console
+```
+- For multi-line comments, you can use triple quotes (''' or """).
+- Multi-line comments are useful for explaining complex code or providing detailed information.
+- They can also be used to temporarily disable code during debugging
+```
+'''
+This is a multi-line comment.
+It can span multiple lines.
+'''
+```
+- Escape sequences are special characters that are used to represent certain whitespace or control characters within strings. They start with a backslash (\).
+- Common escape sequences include:
+   •	\n: New line
+   •	\t: Tab
+   •	\\: Backslash
+   •	\": Double quote
+   •	\': Single quote
+- Example:
+```
+print("Hello,\nWorld!")  # Output: Hello,
+                           #         World!
+print("Hello,\tWorld!")  # Output: Hello,    World!
+print("He said, \"Hello!\"")  # Output: He said, "Hello
+```
