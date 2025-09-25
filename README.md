@@ -104,11 +104,11 @@ It can span multiple lines.
 ```
 - Escape sequences are special characters that are used to represent certain whitespace or control characters within strings. They start with a backslash (\).
 - Common escape sequences include:
-   •	\n: New line
-   •	\t: Tab
-   •	\\: Backslash
-   •	\": Double quote
-   •	\': Single quote
+   -	\n: New line
+   -	\t: Tab
+   -	\\: Backslash
+   -	\": Double quote
+   -	\': Single quote
 - Example:
 ```
 print("Hello,\nWorld!")  # Output: Hello,
