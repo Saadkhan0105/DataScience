@@ -118,3 +118,26 @@ print("Hello,\nWorld!")  # Output: Hello,
 print("Hello,\tWorld!")  # Output: Hello,    World!
 print("He said, \"Hello!\"")  # Output: He said, "Hello
 ```
+
+## Operators:
+- Operators are special symbols that perform operations on variables and values.
+- Python supports various types of operators:
+1. Arithmetic Operators: +, -, *, /, %, // (floor division), ** (exponentiation)
+2. Comparison Operators: ==, !=, >, <, >=, <=
+3. Logical Operators: and, or, not
+4. Assignment Operators: =, +=, -=, *=, /=, %=, //=
+5. Bitwise Operators: &, |, ^, ~, <<, >>
+6. Membership Operators: in, not in
+7. Identity Operators: is, is not
+
+- Example:
+```
+a = 10
+b = 3
+print(a + b)  # Output: 13
+print(a > b)  # Output: True
+print(a and b)  # Output: 3
+a += 5
+print(a)  # Output: 15
+```
+
