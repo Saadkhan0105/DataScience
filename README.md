@@ -141,3 +141,16 @@ a += 5
 print(a)  # Output: 15
 ```
 
+## Conditional:
+- Conditional statements are used to perform different actions based on different conditions.
+- The primary conditional statements in Python are if, elif, and else.
+- Example:
+```
+age = int(input("Enter your age: "))
+if age < 18:
+      print("You are a minor.")
+elif age >= 18 and age < 65:
+      print("You are an adult.")
+else:
+      print("You are a senior citizen.")
+```
