@@ -147,10 +147,13 @@ print(a)  # Output: 15
 - Example:
 ```
 age = int(input("Enter your age: "))
-if age < 18:
-      print("You are a minor.")
-elif age >= 18 and age < 65:
-      print("You are an adult.")
+
+if (age > 18):
+    print("You can drive.")  
+elif age == 18:
+    print("We will check your documents.") 
 else:
-      print("You are a senior citizen.")
+    print("Sorry you cannot drive.")
+    
+print("End of Program.")
 ```
