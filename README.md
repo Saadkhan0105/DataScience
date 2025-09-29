@@ -179,3 +179,13 @@ match a:
     case _:
         print("Bettr luck next time")
 ```
+
+## Loops:
+1. For Loop:
+- The for loop is used to iterate over a sequence (like a list, tuple, dictionary, set, or string) or other iterable objects.
+- It allows you to execute a block of code multiple times, once for each item in the sequence.
+- Example:
+```
+for i in range(1, 11): 
+    print("5 *", i, "=", 5*i)
+```
