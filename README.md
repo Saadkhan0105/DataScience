@@ -189,3 +189,15 @@ match a:
 for i in range(1, 11): 
     print("5 *", i, "=", 5*i)
 ```
+
+2. While Loop:
+- The while loop is used to execute a block of code as long as a specified condition is true.
+- It is useful when the number of iterations is not known beforehand and depends on a condition.
+- Example:
+```
+i = 1
+while i <= 10:
+    print("5 *", i, "=", 5*i)
+    i = i + 1
+```
+
