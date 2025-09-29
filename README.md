@@ -201,3 +201,37 @@ while i <= 10:
     i = i + 1
 ```
 
+3. Break:
+- The break statement is used to exit a loop prematurely when a certain condition is met.
+- It can be used in both for and while loops.
+- Example:
+```
+for i in range(0, 21):
+    print(i)
+    if i == 11:
+        print("Breaking the loop")
+        break
+```
+
+4. Continue: 
+- The continue statement is used to skip the current iteration of a loop and move to the next iteration.
+- It can be used in both for and while loops.
+- Example:
+```
+for i in range(1, 20):
+    if i == 10:
+        continue
+    print(i)
+```
+
+5. Pass:
+- The pass statement is a null operation; it does nothing when executed.
+- It is used as a placeholder in situations where a statement is syntactically required but no action is needed.
+- Example:
+```
+i = 3
+if i == 12:
+    print("This is a pass statement")
+    pass
+print("End of the program")
+```
