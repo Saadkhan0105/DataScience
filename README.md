@@ -144,6 +144,10 @@ print(a)  # Output: 15
 ## Conditional:
 - Conditional statements are used to perform different actions based on different conditions.
 - The primary conditional statements in Python are if, elif, and else.
+1. if-elif-else:
+- The if statement is used to test a specific condition. If the condition is true, the block of code inside the if statement is executed.
+- The elif (else if) statement is used to test multiple conditions. If the first condition is false, the program checks the next condition.
+- The else statement is used to execute a block of code when all previous conditions are false.
 - Example:
 ```
 age = int(input("Enter your age: "))
@@ -156,4 +160,22 @@ else:
     print("Sorry you cannot drive.")
     
 print("End of Program.")
+```
+
+ 2. match:
+- The match statement is used for pattern matching, introduced in Python 3.10.
+- It allows you to match a value against a series of patterns and execute code based on the matched pattern.
+- Example:
+```
+a = int(input("Enter a number between 1 and 10: "))
+
+match a:
+    case 1:
+        print("You won a Charger🔌 !")
+    case 3:
+        print("You won $3")
+    case 6:
+        print("You won a MacBook💻 !")
+    case _:
+        print("Bettr luck next time")
 ```
