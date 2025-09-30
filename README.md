@@ -235,3 +235,35 @@ if i == 12:
     pass
 print("End of the program")
 ```
+
+## Strings:
+- Strings are sequences of characters enclosed in single quotes (' '), double quotes (" "), or triple quotes (''' ''' or """ """).
+- Strings are immutable, meaning they cannot be changed after they are created.
+- Example:
+```
+# name = "Saad"
+name = 'Saad'
+# name = '''Saad'''
+print(name)  
+```
+- Indexing and Slicing:
+- Strings can be indexed and sliced to access specific characters or substrings.
+- Indexing starts at 0 for the first character, 1 for the second character, and so on. Negative indexing starts from -1 for the last character, -2 for the second last, and so on.
+- Example:
+```
+name = "Saad"
+print(name[0])  # Output: S
+print(name[1])  # Output: a
+print(name[2])  # Output: a
+print(name[3])  # Output: d
+```
+- Slicing allows you to extract a substring by specifying a start and end index.
+- Example:
+```
+name = "Saad"
+print(name[0:2])  # Output: Sa (from index 0 to index 2, excluding index 2)
+print(name[:3])   # Output: Saa (from start to index 3, excluding index 3)
+print(name[1:])   # Output: aad (from index 1 to the end)
+print(name[-1])   # Output: d (last character)
+print(name[-3:-1]) # Output: aa (from index -3 to index -1, excluding index -1)
+```
