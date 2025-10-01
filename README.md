@@ -295,3 +295,29 @@ print(name.split())  # Output: ['Saad', 'Khan']
 words = ["Hello", "World"]
 print(" ".join(words))  # Output: Hello World
 ```
+
+### String Formatting:
+- String formatting allows you to create strings with dynamic content by embedding variables or expressions within a string.
+- Python provides several ways to format strings:
+1. f-strings (formatted string literals): Introduced in Python 3.6,
+    - Example:
+    ```
+    name = "Saad"
+    age = 34
+    print(f"My name is {name} and I am {age} years old.")
+    ```
+2. str.format() method:
+    - Example:
+    ```
+    name = "Saad"
+    age = 34
+    print("My name is {} and I am {} years old.".format(name, age))
+    ```
+3. %-formatting (old-style formatting):
+    - Example:
+    ```
+    name = "Saad"
+    age = 34
+    print("My name is %s and I am %d years old." % (name, age))
+    ```
+    
