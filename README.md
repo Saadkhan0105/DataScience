@@ -267,3 +267,31 @@ print(name[1:])   # Output: aad (from index 1 to the end)
 print(name[-1])   # Output: d (last character)
 print(name[-3:-1]) # Output: aa (from index -3 to index -1, excluding index -1)
 ```
+
+- Strings are immutable, meaning once a string is created, it cannot be changed or modified.
+- Example:
+```
+name = "Saad"
+name[0] = "P"  # This will raise an error
+```
+
+### String Methods:
+- Python provides several built-in string methods that allow you to manipulate and work with strings.
+- Some commonly used string methods include:
+1. lower(): Converts all characters in the string to lowercase.
+2. upper(): Converts all characters in the string to uppercase.
+3. strip(): Removes leading and trailing whitespace from the string.
+4. replace(old, new): Replaces occurrences of a substring with another substring.
+5. split(separator): Splits the string into a list of substrings based on the specified separator.
+6. join(iterable): Joins elements of an iterable (like a list) into a single string, with the string as the separator.
+- Example:
+```
+name = "  Saad Khan  "
+print(name.lower())  # Output: saad khan
+print(name.upper())  # Output: SAAD KHAN
+print(name.strip())  # Output: Saad Khan
+print(name.replace("Saad", "Ali"))  # Output:   Ali Khan
+print(name.split())  # Output: ['Saad', 'Khan']
+words = ["Hello", "World"]
+print(" ".join(words))  # Output: Hello World
+```
