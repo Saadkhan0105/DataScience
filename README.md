@@ -320,4 +320,18 @@ print(" ".join(words))  # Output: Hello World
     age = 34
     print("My name is %s and I am %d years old." % (name, age))
     ```
-    
+
+## Functions:
+- Functions are reusable blocks of code that perform a specific task.
+- They help in organizing code, improving readability, and reducing redundancy.
+- In Python, functions are defined using the def keyword, followed by the function name and parentheses
+- Example:
+```
+def greet(name):
+    return f"Hello, {name}!"
+print(greet("Saad"))  # Output: Hello, Saad!
+``` 
+### Key Points:
+- Define using def keyword.
+- Function name should be descriptive.
+- Use `return` to send a value back
