@@ -322,6 +322,7 @@ print(" ".join(words))  # Output: Hello World
     ```
 
 ## Functions:
+### Defining Functions in Python:
 - Functions are reusable blocks of code that perform a specific task.
 - They help in organizing code, improving readability, and reducing redundancy.
 - In Python, functions are defined using the def keyword, followed by the function name and parentheses
@@ -336,7 +337,7 @@ print(greet("Saad"))  # Output: Hello, Saad!
 - Function name should be descriptive.
 - Use `return` to send a value back
 
-### Functions Arguments:
+### Functions Arguments and Return Values:
 - Functions can accept inputs called arguments or parameters.
 - There are different types of function arguments:
 1. Positional Arguments: Arguments are passed in the same order as the parameters are defined.
@@ -361,3 +362,12 @@ print(greet("Saad"))  # Output: Hello, Saad!
     print(greet())  # Output: Hello, Guest!
     print(greet("Saad"))  # Output: Hello, Saad!
     ```
+
+### Lambda Functions:
+- Lambda functions are small anonymous functions defined using the lambda keyword.
+- They can take any number of arguments but can only have a single expression.
+- Example:
+```
+square = lambda x: x * x
+print(square(5))
+```
