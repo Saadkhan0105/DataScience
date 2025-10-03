@@ -371,3 +371,16 @@ print(greet("Saad"))  # Output: Hello, Saad!
 square = lambda x: x * x
 print(square(5))
 ```
+
+### Recursion:
+- Recursion is a programming technique where a function calls itself to solve a problem.
+- A recursive function typically has a base case to stop the recursion and a recursive case to continue.
+- Example:
+```
+def factorial(n):
+    if n == 0 or n == 1:  # Base case
+        return 1
+    else:
+        return n * factorial(n - 1)  # Recursive case
+print(factorial(5))  # Output: 120
+```
