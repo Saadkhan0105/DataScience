@@ -335,3 +335,29 @@ print(greet("Saad"))  # Output: Hello, Saad!
 - Define using def keyword.
 - Function name should be descriptive.
 - Use `return` to send a value back
+
+### Functions Arguments:
+- Functions can accept inputs called arguments or parameters.
+- There are different types of function arguments:
+1. Positional Arguments: Arguments are passed in the same order as the parameters are defined.
+    - Example:
+    ```
+    def add(a, b):
+         return a + b
+    print(add(2, 3))  # Output: 5
+    ```
+2. Keyword Arguments: Arguments are passed by explicitly specifying the parameter name.
+    - Example:
+    ```
+    def add(a, b):
+         return a + b
+    print(add(b=3, a=2))  # Output: 5
+    ```
+3. Default Arguments: Parameters can have default values, which are used if no argument is provided
+    - Example:
+    ```
+    def greet(name="Guest"):
+         return f"Hello, {name}!"
+    print(greet())  # Output: Hello, Guest!
+    print(greet("Saad"))  # Output: Hello, Saad!
+    ```
