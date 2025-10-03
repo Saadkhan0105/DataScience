@@ -412,3 +412,46 @@ import requests
 response = requests.get("https://api.github.com")
 print(response.status_code)  # Output: 200
 ```
+
+## Function Scope:
+- Scope refers to the visibility and accessibility of variables and functions in different parts of a program.
+- In Python, there are two main types of scope:
+1. Local Scope: Variables defined within a function are in the local scope and can only be
+    accessed within that function.
+2. Global Scope: Variables defined outside of any function are in the global scope and can be
+    accessed from anywhere in the program.
+- Example:
+```
+def my_function():
+    local_var = "I am local"
+    print(local_var)  # Accessible here
+my_function()
+# print(local_var)  # This will raise an error
+global_var = "I am global"
+print(global_var)  # Accessible here
+def another_function():
+    print(global_var)  # Accessible here
+another_function()
+```
+
+## Docstrings:
+- Docstrings are special strings used to document functions, classes, and modules in Python.
+- They provide a way to describe the purpose, parameters, and return values of a function or
+    class.
+- Docstrings are defined using triple quotes (''' or """) and are placed immediately after the
+    function or class definition.
+- Example:
+```
+def greet(name):
+    """
+    This function greets the person with the given name.
+    
+    Parameters:
+    name (str): The name of the person to greet.
+    
+    Returns:
+    str: A greeting message.
+    """
+    return f"Hello, {name}!"
+print(greet("Saad"))  # Output: Hello, Saad!
+```
