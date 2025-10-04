@@ -460,7 +460,7 @@ print(greet("Saad"))  # Output: Hello, Saad!
 
 - Data structures are used to organize and store data efficiently.
 - Python provides several built-in data structures, including lists, tuples, sets, and dictionaries.
-1. Lists:
+## 1. Lists:
 - Lists are ordered, mutable collections of items.
 - They can contain elements of different data types, including numbers, strings, and even other lists
 - Lists are defined using square brackets [] and elements are separated by commas.
@@ -474,7 +474,7 @@ print(mixed) # Output: [45, 'Saad', 23.5, True]
 print(type(marks)) # Output: <class 'list'>
 print(type(mixed)) # Output: <class 'list'>
 ```
-## List Methods:
+### List Methods:
 - Python provides several built-in methods to manipulate lists:
 1. append(item): Adds an item to the end of the list.
 2. insert(index, item): Inserts an item at a specified index.
@@ -505,11 +505,62 @@ marks.copy() # returns a shallow copy of the list
 print(marks)
 ```
 
-## List Comprehension:
+### List Comprehension:
 - List comprehension is a concise way to create lists in Python.
 - It allows you to generate a new list by applying an expression to each item in an existing iterable (like a list or range) and optionally filtering items based on a condition.
 - The syntax for list comprehension is:
 ```
 table_comp = [5 * i for i in range(1, 11)]
 print(table_comp)
+```
+
+## 2. Tuples:
+- Tuples are ordered, immutable collections of items.
+- They are similar to lists but cannot be modified after creation.
+- Tuples are defined using parentheses () and elements are separated by commas.
+- Example:
+```
+a = (3, 2, 22, 13)
+print(a)
+print(type(a))
+print(a[2])  # Output: 22
+
+Single Element Tuple:
+b = (5,)  
+print(b)
+```
+
+### Tuple Unpacking:
+- Tuple unpacking allows you to assign the elements of a tuple to individual variables in a single statement.
+- Example:
+```
+tu = (3, 2, 45)
+a, b, c = tu
+print(a, b, c)  # Output: 3 2 45
+```
+
+## Tuple Methods:
+- Tuples have a limited number of built-in methods due to their immutability:
+1. count(item): Returns the number of occurrences of an item in the tuple.
+2. index(item): Returns the index of the first occurrence of an item.
+- Example:
+```
+t = (3, 12, 1, 54, 23, 12)
+print(t.count(12))  # Output: 2
+print(t.index(54))  # Output: 3
+```
+
+### Why Use Tuples?
+- Tuples are used when you want to create a collection of items that should not be modified.
+- They are more memory efficient than lists and can be used as keys in dictionaries.
+
+# 3. Sets:
+- Sets are unordered collections of unique items.
+- They are defined using curly braces {} or the set() function.
+- Sets are mutable, meaning you can add or remove items, but they do not allow duplicate items.
+- Example:
+```
+my_set = {1, 2, 3, 4, 5}
+print(my_set)  # Output: {1, 2, 3, 4, 5}
+print(type(my_set))  # Output: <class 'set'>
 ```
