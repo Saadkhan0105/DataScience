@@ -1,6 +1,6 @@
 # PYTHON
 
-## Variables:
+# Variables:
 - In python, variables are used to store data that can be used and maipulated thorughout a program.
 - A variable is created the moment you assign a value to it using the assignment operator (=).
 - Example: 
@@ -24,7 +24,7 @@ Rules of Defining a variable in Python:
 	•	Variable names are case-sensitive (age and Age are different).
 	•	Avoid using Python keywords (e.g., if, for, while) as variable names.
 
-## Datatypes:
+# Datatypes:
 - Python supports several built-in datatypes:
 1. Numeric Types:
    - int: Integer values (e.g., 5, -3, 0)
@@ -46,7 +46,7 @@ Rules of Defining a variable in Python:
 7. None Type:
    - NoneType: Represents the absence of a value (e.g., None).
    
-## TypeCasting:
+# TypeCasting:
 - Typecasting is the process of converting one datatype to another.
 - In Python, you can use built-in functions to perform typecasting:
 1. int(): Converts a value to an integer.
@@ -78,7 +78,7 @@ print(pi_int)  # Output: 3
 print(type(pi_int))
 ```
 
-## Taking User Input 
+# Taking User Input 
 - In Python, you can take user input using the input() function.
 - By default, input() returns a string. We can convert it to other datatypes as needed.
 - Example:
@@ -88,7 +88,7 @@ age = int(input("Enter your age: "))
 print(f"Hello {name}, you are {age} is years old! ")
 ```
 
-## Comments, Escape Sequences and Print Statements
+# Comments, Escape Sequences and Print Statements
 - Comments are used to explain code and make it more readable. In Python, comments start with the # symbol.
 - Example:
 ```
@@ -119,7 +119,7 @@ print("Hello,\tWorld!")  # Output: Hello,    World!
 print("He said, \"Hello!\"")  # Output: He said, "Hello
 ```
 
-## Operators:
+# Operators:
 - Operators are special symbols that perform operations on variables and values.
 - Python supports various types of operators:
 1. Arithmetic Operators: +, -, *, /, %, // (floor division), ** (exponentiation)
@@ -141,7 +141,7 @@ a += 5
 print(a)  # Output: 15
 ```
 
-## Conditional:
+# Conditional:
 - Conditional statements are used to perform different actions based on different conditions.
 - The primary conditional statements in Python are if, elif, and else.
 1. if-elif-else:
@@ -180,7 +180,7 @@ match a:
         print("Bettr luck next time")
 ```
 
-## Loops:
+# Loops:
 1. For Loop:
 - The for loop is used to iterate over a sequence (like a list, tuple, dictionary, set, or string) or other iterable objects.
 - It allows you to execute a block of code multiple times, once for each item in the sequence.
@@ -236,7 +236,7 @@ if i == 12:
 print("End of the program")
 ```
 
-## Strings:
+# Strings:
 - Strings are sequences of characters enclosed in single quotes (' '), double quotes (" "), or triple quotes (''' ''' or """ """).
 - Strings are immutable, meaning they cannot be changed after they are created.
 - Example:
@@ -321,7 +321,7 @@ print(" ".join(words))  # Output: Hello World
     print("My name is %s and I am %d years old." % (name, age))
     ```
 
-## Functions:
+# Functions:
 ### Defining Functions in Python:
 - Functions are reusable blocks of code that perform a specific task.
 - They help in organizing code, improving readability, and reducing redundancy.
@@ -454,4 +454,22 @@ def greet(name):
     """
     return f"Hello, {name}!"
 print(greet("Saad"))  # Output: Hello, Saad!
+```
+
+# Data Structures in Python:
+
+- Data structures are used to organize and store data efficiently.
+- Python provides several built-in data structures, including lists, tuples, sets, and dictionaries.
+1. Lists:
+- Lists are ordered, mutable collections of items.
+- They can contain elements of different data types, including numbers, strings, and even other lists
+- Lists are defined using square brackets [] and elements are separated by commas.
+- Example:
+```
+marks = [54, 23, 64, 93, 32]
+mixed = [45, "Saad", 23.5, True]
+print(marks) # Output: [54, 23, 64, 93, 32]
+print(mixed) # Output: [45, 'Saad', 23.5, True]
+print(type(marks)) # Output: <class 'list'>
+print(type(mixed)) # Output: <class 'list'>
 ```
