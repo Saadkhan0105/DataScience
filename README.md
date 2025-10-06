@@ -625,3 +625,28 @@ print("Cleared a:", a)
 	1.	Calculates the hash of the element.
 	2.	Puts it in a bucket in the hash table.
 	3.	Prints the set in whatever order it currently has internally — not “first added, first shown.”
+
+# 4. Dictionaries:
+- Dictionaries are unordered collections of key-value pairs.
+- They are defined using curly braces {} with key-value pairs separated by commas.
+- Keys must be unique and immutable (e.g., strings, numbers, tuples), while values
+    can be of any data type.
+- Example:
+```
+my_dict = {"name": "Saad", "age": 29, "city": "Mumbai"}
+print(my_dict)  # Output: {'name': 'Saad', 'age': 29, 'city': 'Mumbai'}
+print(my_dict["name"])  # Output: Saad
+print(type(my_dict))  # Output: <class 'dict'>
+```
+
+## Dictionary Methods:
+- Python provides several built-in methods to manipulate dictionaries:
+1. keys(): Returns a view object containing the keys of the dictionary.
+2. values(): Returns a view object containing the values of the dictionary.
+3. items(): Returns a view object containing the key-value pairs of the dictionary.
+4. get(key, default): Returns the value for the specified key. If the key is not found, returns the default value (None if not specified).
+5. update(other_dict): Updates the dictionary with key-value pairs from another dictionary.
+6. pop(key, default): Removes the specified key and returns its value. If the key is not found, returns the default value (raises KeyError if not specified).
+7. popitem(): Removes and returns an arbitrary key-value pair from the dictionary.
+8. clear(): Removes all items from the dictionary.
+- Example:
