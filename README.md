@@ -752,3 +752,50 @@ print(e1.get_info())
 ## Object Introspection:
 - Object introspection is a mechanism in Python that allows you to get information about an object at runtime.
 - It provides a way to examine the attributes, methods, and properties of an object dynamically.
+
+## Inheritance:
+- Inheritance is a fundamental concept in object-oriented programming that allows a class (called the child or subclass) to inherit attributes and methods from another class (called the parent or superclass).
+- This promotes code reuse and establishes a hierarchical relationship between classes.
+- Example:
+```
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        print("Generic animal sound")
+        
+class Dog(Animal): # Dog class inherits from Animal class
+    def speak(self): # overriding the speak method
+        print(f"{self.name} says Woof Woof!")
+
+class Cat(Animal): # Cat class inherits from Animal class
+    def speak(self): # overriding the speak method
+        print(f"{self.name} says Meow Meow!")
+        
+my_dog = Dog("Buddy")
+my_cat = Cat("Whiskers")
+
+print(my_dog.name) # accessing instance variable from parent class
+my_dog.speak() # calling overridden method
+
+print(my_cat.name) # accessing instance variable from parent class
+my_cat.speak() # calling overridden method
+```
+
+## Polymorphism:
+- Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as instances of the same base class.
+- It enables a single interface to represent different underlying forms (data types).
+- Example:
+```
+# Calling Parent Constructor with super()
+class Bird(Animal):
+    def __init__(self, name, wingspan):
+        super().__init__(name)  # Call Animal's __init__ to set the name
+        self.wingspan = wingspan # Add a Bird-specific attribute
+
+my_bird = Bird("Tweety", 10)
+print(my_bird.name)      # Output: Tweety (set by Animal's constructor)
+print(my_bird.wingspan)  # Output: 10   (set by Bird's constructor)
+```
+
