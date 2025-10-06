@@ -460,7 +460,7 @@ print(greet("Saad"))  # Output: Hello, Saad!
 
 - Data structures are used to organize and store data efficiently.
 - Python provides several built-in data structures, including lists, tuples, sets, and dictionaries.
-## 1. Lists:
+# 1. Lists:
 - Lists are ordered, mutable collections of items.
 - They can contain elements of different data types, including numbers, strings, and even other lists
 - Lists are defined using square brackets [] and elements are separated by commas.
@@ -514,7 +514,7 @@ table_comp = [5 * i for i in range(1, 11)]
 print(table_comp)
 ```
 
-## 2. Tuples:
+# 2. Tuples:
 - Tuples are ordered, immutable collections of items.
 - They are similar to lists but cannot be modified after creation.
 - Tuples are defined using parentheses () and elements are separated by commas.
