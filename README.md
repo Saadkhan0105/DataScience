@@ -650,3 +650,34 @@ print(type(my_dict))  # Output: <class 'dict'>
 7. popitem(): Removes and returns an arbitrary key-value pair from the dictionary.
 8. clear(): Removes all items from the dictionary.
 - Example:
+```
+marks = {"Saad": 54, "Abuzar": 45, "Umaima": 93}
+
+print(marks.keys())  # Prints all the keys in the dictionary
+print(marks.values())  # Prints all the values in the dictionary
+print(marks.items())  # Prints all the key-value pairs in the dictionary
+marks.update({"Saad": 100, "Ali": 67})  # Updates the dictionary with new key-value pairs
+print(marks)
+marks.pop("Ali")  # Removes the key-value pair with the specified key
+print(marks)
+marks.popitem()  # Removes the last key-value pair from the dictionary
+print(marks)
+marks.clear()  # Clears the dictionary
+print(marks)
+```
+### Dictionary Comprehension:
+- Dictionary comprehension is a concise way to create dictionaries in Python.
+- It allows you to generate a new dictionary by applying an expression to each item in an existing
+- iterable (like a list or range) and optionally filtering items based on a condition.
+- The syntax for dictionary comprehension is:
+```
+table_comp = {i: 5*i for i in range(1, 11)}
+print(table_comp)
+``` 
+# When to Use Each Data Structure:
+| Data Structure    | Features                | Best For                                |
+|-------------------|-------------------------|-----------------------------------------|
+| List              | 28                      | Storing Sequences, Dynamic Data         |
+| Tuple             | 25                      | Fixed collections, dictionary keys.     |
+| Set               | Unordered, Unique       | Removing duplicates, set operations     |
+| Dictionary        | Key-Value Pairs         | Fast lookups, structured data           |

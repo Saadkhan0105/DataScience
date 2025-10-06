@@ -1,4 +1,4 @@
-marks = {"Saad": 54, "Abuzar": 45, "Umaimah": 93}
+marks = {"Saad": 54, "Abuzar": 45, "Umaima": 93}
 
 print(marks.keys())  # Prints all the keys in the dictionary
 print(marks.values())  # Prints all the values in the dictionary
