@@ -681,3 +681,46 @@ print(table_comp)
 | Tuple             | 25                      | Fixed collections, dictionary keys.     |
 | Set               | Unordered, Unique       | Removing duplicates, set operations     |
 | Dictionary        | Key-Value Pairs         | Fast lookups, structured data           |
+
+
+# Object Oriented Programming(OOPS) in Python:
+
+## 1. What is Object Oriented Programming(OOPS)?
+- Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which combine data (attributes) and functions (methods) that operate on that data.
+
+- 👉 In simple terms: OOP lets you model real-world things (like a Car, Student, or Bank Account) as objects in code. 
+- OOP helps make code more modular, reusable, and easier to maintain.
+
+## 🧱 4 Pillars of OOP
+1.	Encapsulation 🧰 :
+- Encapsulation llows us to bundle data (attributes) and behaviors (methods) within a class to create a cohesive unit. 
+- By defining methods to control access to attributes and its modification, encapsulation helps maintain data integrity and promotes modular, secure code.
+2.	Abstraction 🎭 :
+- Abstraction focuses on hiding implementation details and exposing only the essential functionality of an object. 
+- By enforcing a consistent interface, abstraction simplifies interactions with objects, allowing developers to focus on what an object does rather than how it achieves its functionality.
+3.  Inheritance 🧬 :
+- Inheritance enables the creation of hierarchical relationships between classes, allowing a subclass to inherit attributes and methods from a parent class.
+- This promotes code reuse and reduces duplication
+4.  Polymorphism 🔄 :
+- Polymorphism allows you to treat objects of different types as instances of the same base type, as long as they implement a common interface or behavior. 
+- Python’s duck typing make it especially suited for polymorphism, as it allows you to access attributes and methods on objects without needing to worry about their actual class.
+
+## Class and Objects:
+### Class:
+- A class is a blueprint for creating objects. It defines the attributes and methods that the objects of that class will have. 
+- Eg: Form for an Exam that contains name, age, elective, father's name etc.
+
+
+### Object:
+- An object is an instance of a class. It represents a specific entity with its own state and behavior.
+- Eg: Form which contains the data for John Doe
+
+### Creating a Class and Object in Python:
+```
+class Employee:
+    company = "HP"
+    
+    def get_salary(self):
+        return 34000
+```
+- Self: It is a way to reference the object of the class which is being created
