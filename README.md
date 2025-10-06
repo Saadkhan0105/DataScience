@@ -748,3 +748,7 @@ print(e1.get_salary())
 print(e1.get_info())
 
 ```
+
+## Object Introspection:
+- Object introspection is a mechanism in Python that allows you to get information about an object at runtime.
+- It provides a way to examine the attributes, methods, and properties of an object dynamically.
