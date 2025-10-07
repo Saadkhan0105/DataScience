@@ -827,3 +827,57 @@ p = p1 + p2  # using __add__ method
 p.print_point()
 ```
 
+# Advanced Concepts:
+
+## 1. Decorators:
+- Decorators are a powerful feature in Python that allows you to modify the behavior of a function or class method without changing its actual code.
+- They are often used for logging, access control, caching, and other cross-cutting concerns
+- A decorator is a function that takes another function as an argument, extends its behavior, and returns a new function.
+
+- Example:
+```
+# Decorator is a function that takes a function, it creates a new function inside its body (wrapper) and returns a new function.
+def decorator(func):
+    def wrapper():
+        print("I am about to call a function")
+        func()
+        print("I have called the function")
+    return wrapper
+
+@decorator
+def say_hello():
+    print("Hello")
+    
+say_hello()
+# f = decorator(say_hello)
+# f()
+'''
+f will look something like this:
+def f():
+    print("I am about to call a function")
+    print("Hello")
+    print("I have called the function")
+'''
+```
+
+### Decorators with Arguments::
+- If the function being decorated takes arguments, the wrapper function inside the decorator must also accept those arguments and pass them to the original function.
+- Example:
+```
+def repeat(n):
+    def decorator(func):
+        def wrapper(a):
+            for i in range(n):
+                func(a)
+        return wrapper
+    return decorator
+
+@repeat(7)
+def say_hello(name):
+    print(f"Hello {name}")
+    
+say_hello("Saad")
+```
+
+
+## 2. Context Managers:
