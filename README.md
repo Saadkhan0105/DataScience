@@ -799,3 +799,31 @@ print(my_bird.name)      # Output: Tweety (set by Animal's constructor)
 print(my_bird.wingspan)  # Output: 10   (set by Bird's constructor)
 ```
 
+## Operator Overloading:
+- Operator overloading is a feature in Python that allows you to define custom behavior for standard operators (like +, -, *, etc.) when they are used with instances of your classes.
+- By overloading operators, you can make your custom objects behave like built-in types, making
+    them more intuitive to use.
+- Example:
+```
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        
+    def sum(self, p):
+        return Point(self.x + p.x, self.y + p.y)
+    
+    def print_point(self):
+        print(f"X is {self.x} and Y is {self.y}")
+        
+    def __add__(self, p):
+        return Point(self.x + p.x, self.y + p.y)
+
+p1 = Point(3, 2)
+p2 = Point(6, 3)
+
+# p = p1.sum(p2)
+p = p1 + p2  # using __add__ method
+p.print_point()
+```
+
