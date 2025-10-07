@@ -957,3 +957,63 @@ print(Employee.company)
 e1.change_company("Amazon")
 print(Employee.company)
 ```
+
+### Important Point 🧠:
+- Static methods can be called on the class itself, not on an instance of the class.
+- Class methods can be called on the class itself, but they also have access to the class itself.
+
+## 3. Magic Methods or Dunder Methods:
+- Magic methods or dunder methods are special methods in Python that allow you to customize the behavior of built-in operators or built-in functions.
+- They are called "dunder" methods because they are surrounded by double underscores (e.g., __init__, __add__, __str__).
+- Example:
+```
+class Employee:
+    company = "Google"
+    
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+    
+    def __str__(self):
+        return f"The name of the employee is {self.name} and the salary is {self.salary}"
+    
+    def __repr__(self):
+        return f"Employee: {self.name}\nsalary: {self.salary}"
+    
+    def __len__(self):
+        return len(self.name)
+        
+e = Employee("Saad", 100000)
+print(len(e))
+print(e.name, e.salary)
+print(str(e))
+print(repr(e))
+```
+
+### Common Magic Methods:
+| Magic Method   | Description                                      | Example Usage                       |
+|----------------|--------------------------------------------------|------------------------------------|
+| `__init__`     | Constructor method to initialize an object      | `obj = MyClass()`                  |
+| `__str__`      | String representation of an object              | `print(obj)`                       |
+| `__repr__`     | Official string representation of an object     | `repr(obj)`                        |
+| `__add__`      | Addition operator overloading                   | `obj1 + obj2`                      |
+| `__sub__`      | Subtraction operator overloading                | `obj1 - obj2`                      |
+| `__mul__`      | Multiplication operator overloading             | `obj1 * obj2`                      |
+| `__len__`      | Length of an object                             | `len(obj)`                         |
+| `__getitem__`  | Accessing an item using indexing                | `obj[index]`                       |
+| `__setitem__`  | Setting an item using indexing                  | `obj[index] = value`               |
+| `__delitem__`  | Deleting an item using indexing                 | `del obj[index]`                   |
+| `__iter__`     | Iterator for an object                           | `for item in obj:`                 |
+| `__next__`     | Next item in an iterator                         | `next(obj)`                        |
+| `__call__`     | Calling an object as a function                 | `obj(arg1, arg2)`                  |
+| `__enter__`    | Context manager entry point                     | `with obj:`                        |
+| `__exit__`     | Context manager exit point                      | `with obj:`                        |
+| `__getattr__`  | Attribute access that doesn’t exist             | `obj.non_existent_attribute`       |
+| `__setattr__`  | Attribute assignment that doesn’t exist         | `obj.non_existent_attribute = value` |
+| `__delattr__`  | Attribute deletion that doesn’t exist           | `del obj.non_existent_attribute`   |
+| `__eq__`       | Equality comparison operator overloading        | `obj1 == obj2`                     |
+| `__ne__`       | Inequality comparison operator overloading      | `obj1 != obj2`                     |
+| `__lt__`       | Less than comparison operator overloading       | `obj1 < obj2`                      |
+| `__gt__`       | Greater than comparison operator overloading    | `obj1 > obj2`                      |
+| `__le__`       | Less than or equal to comparison operator overloading | `obj1 <= obj2`                 |
+
