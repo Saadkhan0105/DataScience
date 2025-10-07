@@ -880,4 +880,37 @@ say_hello("Saad")
 ```
 
 
-## 2. Context Managers:
+## 2. Getters and Setters:
+- Getters and setters are methods used to access and modify the attributes of a class.
+- They provide a way to encapsulate the internal representation of an object and control how its attributes are accessed and modified.
+- Example:
+```
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+    
+    @property
+    def first_name(self):
+        l = self.name.split(" ")
+        return l[0]
+    
+    @first_name.setter
+    def first_name(self, first):
+        l = self.name.split(" ")
+        new_name = f"{first} {l[1]}"
+        self.name = new_name
+
+e = Employee("Saad Khan", 50000)
+# print(e.first_name())
+# e.set_first_name("Abuzar")
+# print(e.name)
+
+print(e.first_name)
+e.first_name = "Abuzar"
+print(e.name)
+```
+
+### Important Point 🧠:
+- To make an attribute read-only, define just the @property decorator (the getter) and leave out the @name.setter method.
+- Trying to set the attribute will raise an AttributeError.
