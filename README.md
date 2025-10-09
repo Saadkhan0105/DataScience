@@ -1106,3 +1106,14 @@ def sum(a, b):
 c = reduce(sum, numbers)
 print(c)
 ```
+
+## 7. Walrus Operator:
+- The walrus operator, also known as the assignment expression, is a new feature in Python 3.8 that allows you to assign a value to a variable and use it in the same line.
+- It is denoted by the := operator.
+- Example:
+```
+while(data:=input("Enter the value: ")):
+    print(data)
+    if data == "Q" or data == "q":
+        break;
+```
