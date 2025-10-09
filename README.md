@@ -1117,3 +1117,28 @@ while(data:=input("Enter the value: ")):
     if data == "Q" or data == "q":
         break;
 ```
+
+## 8. Args and Kwargs:
+- In Python, you can define functions with variable number of arguments using the `*args` and `**kwargs` syntax.
+- `*args` is used to pass a non-keyworded, variable-length argument list to a function.
+- `**kwargs` is used to pass a keyworded, variable-length argument list to a function.
+- Example:
+```
+# Args:
+def greet(*args):
+    print("Arguments:", args)
+    for name in args:
+        print(f"Hello {name}!")
+
+greet("Saad", "Abuzar", "Umaima")
+```
+```
+# Kwargs:
+def print_info(**kwargs):
+    print("Keyword Arguments:", kwargs)
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+print_info(name="Saad", age=29, city="Mumbai")
+```
+
