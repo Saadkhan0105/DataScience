@@ -915,7 +915,7 @@ print(e.name)
 - To make an attribute read-only, define just the @property decorator (the getter) and leave out the @name.setter method.
 - Trying to set the attribute will raise an AttributeError.
 
-## Static and Class Methods:
+## 3. Static and Class Methods:
 - Static and class methods are special methods that can be defined inside a class.
 - Static methods are bound to the class rather than the instance of the class, while class methods are bound to the class itself.
 - Example:
@@ -962,7 +962,7 @@ print(Employee.company)
 - Static methods can be called on the class itself, not on an instance of the class.
 - Class methods can be called on the class itself, but they also have access to the class itself.
 
-## 3. Magic Methods or Dunder Methods:
+## 4. Magic Methods or Dunder Methods:
 - Magic methods or dunder methods are special methods in Python that allow you to customize the behavior of built-in operators or built-in functions.
 - They are called "dunder" methods because they are surrounded by double underscores (e.g., __init__, __add__, __str__).
 - Example:
@@ -1018,7 +1018,7 @@ print(repr(e))
 | `__le__`       | Less than or equal to comparison operator overloading | `obj1 <= obj2`                 |
 
 
-## Exception Handling and Custom Errors:
+## 5. Exception Handling and Custom Errors:
 - Exception handling is a fundamental concept in Python that allows you to handle errors or unexpected events that occur during program execution.
 - It helps in maintaining the normal flow of the program even when errors occur.
 - In Python, exceptions are handled using the try-except block.
@@ -1063,7 +1063,7 @@ finally:
     print("This block is always executed, cleaning up resources if needed.")
 ``` 
 
-## Map, Filter and Reduce:
+## 6. Map, Filter and Reduce:
 1. Map:
 - The map() function applies a given function to each item in an iterable (like a list) and returns a map object (which is an iterator).
 - Example:
