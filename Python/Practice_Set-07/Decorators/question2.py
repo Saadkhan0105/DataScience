@@ -4,9 +4,10 @@ from time import time
 def timer(func):
     def wrapper(n):
         t1 = time()
-        func(n)
+        result = func(n)
         t2 = time()
         print(f"Function {func.__name__} took {t2-t1} seconds to execute.")
+        return result
     return wrapper
 
 @timer
