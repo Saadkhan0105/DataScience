@@ -1063,3 +1063,46 @@ finally:
     print("This block is always executed, cleaning up resources if needed.")
 ``` 
 
+## Map, Filter and Reduce:
+1. Map:
+- The map() function applies a given function to each item in an iterable (like a list) and returns a map object (which is an iterator).
+- Example:
+```
+numbers = [1, 2, 3, 45, 4, 21]
+
+# def square(x):
+#     return x * x
+
+new = list(map(lambda x: x * x, numbers))
+print(new)
+```
+
+2. Filter:
+- The filter() function filters elements from an iterable based on a given function that returns True or False.
+- Example:
+```
+# def is_greater_than_9(x):
+#     if x > 9:
+#         return True
+#     else:
+#         return False
+    
+a = [1, 3, 5, 234, 34, 32, 6543, 23, 2, 5, 6, 7, 43]
+
+new = list(filter(lambda x: x>9, a))
+print(new)
+```
+3. Reduce:
+- The reduce() function from the functools module applies a binary function cumulatively to the items of an iterable, reducing it to a single value.
+- Example:
+```
+from functools import reduce
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+def sum(a, b):
+    return a + b
+
+c = reduce(sum, numbers)
+print(c)
+```
