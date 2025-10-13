@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Template Inheritance{% endblock title %}</title>
+    <style>
+        nav {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+        }
+        footer {
+            background-color: rgb(191, 174, 174);
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/"><span>Home</span></a>
+        <a href="/"><span>About</span></a>
+        <a href="/"><span>Contact</span></a>
+    </nav>
+    {% block content %}
+    {% endblock content %}
+    <footer>
+        this is footer
+    </footer>
+</body>
+</html>
